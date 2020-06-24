@@ -17,7 +17,7 @@ module.exports.connect = async (event) => {
     ReturnValues: "ALL_OLD"  
   }
   
-  console.log("Adding a new item");
+  console.log("Writing a new item to DynamoDB");
 
   const writeData = await docClient.put(params).promise();
 
